@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>HackerOne API Changelog</title>
+    <link href="https://api.hackerone.com/getting-started/#changelog" rel="alternate"/>
+    <link href="https://api.hackerone.com/changelog.rss" rel="self"/>
+    <description>HackerOne API Changelog</description>
+    <item>
+      <title>Added "organization" relationship to the program object.
+</title>
+      <link>https://api.hackerone.com/customer-reference/#program</link>
+      <pubDate>24 Apr 2024</pubDate>
+    </item>
+    <item>
+      <title>Added "citizenshipverified" and "residencyverified" boolean fields to the allowed reporter object.
+</title>
+      <link>https://api.hackerone.com/customer-reference/#allowed_reporter</link>
+      <pubDate>01 Mar 2024</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get all CVE requests for programs.
+Added endpoint to create a CVE request for programs.
+Added endpoint to update CVEs for a report.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#programs-get-all-cve-requests</link>
+      <pubDate>27 Feb 2024</pubDate>
+    </item>
+    <item>
+      <title>Added "rulesofengagementsigned", "identityverified" and "background_checked" boolean fields to the allowed reporter object.
+</title>
+      <link>https://api.hackerone.com/customer-reference/#allowed_reporter</link>
+      <pubDate>26 Feb 2024</pubDate>
+    </item>
+    <item>
+      <title>Added "state" and "archived_at" fields to the asset object and enabled filtering assets by "state" and "archived" parameters.
+</title>
+      <link>https://api.hackerone.com/customer-reference#asset</link>
+      <pubDate>08 Feb 2024</pubDate>
+    </item>
+    <item>
+      <title>Added "inbox_ids" filter field to the  Get All Reports endpoint.
+</title>
+      <link>https://api.hackerone.com/customer-resources#reports-get-all-reports</link>
+      <pubDate>02 Feb 2024</pubDate>
+    </item>
+    <item>
+      <title>Added "submittedat" field to the  reports endpoint and enabled filtering by "submittedatgt" and "submitted_atlt" parameters.
+</title>
+      <link>https://api.hackerone.com/customer-resources#reports</link>
+      <pubDate>01 Feb 2024</pubDate>
+    </item>
+    <item>
+      <title>Added "cvssvectorstring" field to the  severity object.
+</title>
+      <link>https://api.hackerone.com/customer-reference/#severity</link>
+      <pubDate>25 Jan 2024</pubDate>
+    </item>
+    <item>
+      <title>Enabled filtering assets by ID greater than the specified ID.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#assets-get-all-assets</link>
+      <pubDate>09 Jan 2024</pubDate>
+    </item>
+    <item>
+      <title>Added "oldseverity" and "newseverity" relationships to the activity-report-severity-updated object.
+</title>
+      <link>https://api.hackerone.com/customer-reference#activity-activity-report-severity-updated</link>
+      <pubDate>04 Jan 2024</pubDate>
+    </item>
+    <item>
+      <title>Added aiModel asset type.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#assets</link>
+      <pubDate>06 Dec 2023</pubDate>
+    </item>
+    <item>
+      <title>Adjusted rate limiting for reports to be more lenient.
+</title>
+      <link>https://api.hackerone.com/getting-started/#rate-limits</link>
+      <pubDate>04 Dec 2023</pubDate>
+    </item>
+    <item>
+      <title>Added "lastsignin_at" attribute to the organization member object.
+</title>
+      <link>https://api.hackerone.com/customer-reference/#organization-member</link>
+      <pubDate>28 Nov 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get all inboxes for organizations.
+Added inboxes relationship to report.
+Added endpoint to update inboxes for a report.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#organizations-get-all-inboxes</link>
+      <pubDate>17 Oct 2023</pubDate>
+    </item>
+    <item>
+      <title>Implemented more strict rate limiting for reports
+</title>
+      <link>https://api.hackerone.com/getting-started/#rate-limits</link>
+      <pubDate>12 Oct 2023</pubDate>
+    </item>
+    <item>
+      <title>Added collaborators relationship to report.
+</title>
+      <link>https://api.hackerone.com/customer-resources#collaborator</link>
+      <pubDate>05 Oct 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get allowed reporters of a private program.
+</title>
+      <link>https://api.hackerone.com/customer-resources#programs-get-allowed-reporters</link>
+      <pubDate>19 Jul 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get activities of allowed reporter of a private program.
+</title>
+      <link>https://api.hackerone.com/customer-resources#programs-get-allowed-reporter-activities</link>
+      <pubDate>19 Jul 2023</pubDate>
+    </item>
+    <item>
+      <title>Deprecated "Get whitelisted reporters of a private program" endpoint and  get activities of whitelisted reporter of a private program
+endpoints. Use get allowed reporters of a private program and
+get activities of allowed reporter of a private program
+instead.
+</title>
+      <link>https://api.hackerone.com/customer-resources#programs-get-allowed-reporters</link>
+      <pubDate>19 Jul 2023</pubDate>
+    </item>
+    <item>
+      <title>Added sorting by reportid, createdat, updated_at fields on query activities endpoint.
+</title>
+      <link>https://api.hackerone.com/customer-resources#activities-query-activities</link>
+      <pubDate>11 Jul 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get whitelisted reporters of a private program.
+</title>
+      <link>https://api.hackerone.com/customer-resources#programs-get-whitelisted-reporters</link>
+      <pubDate>05 Jul 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get activities of whitelisted reporter of a private program.
+</title>
+      <link>https://api.hackerone.com/customer-resources#programs-get-whitelisted-reporter-activities</link>
+      <pubDate>05 Jul 2023</pubDate>
+    </item>
+    <item>
+      <title>Added the attribute email to organization-member object.
+</title>
+      <link>https://api.hackerone.com/customer-reference#organization-member</link>
+      <pubDate>02 May 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get all programs for organizations.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#organizations-get-all-programs</link>
+      <pubDate>13 Feb 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get all eligibility settings in an organization.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#organizations-get-all-eligibility-settings</link>
+      <pubDate>09 Feb 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get an eligibility settings in an organization.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#organizations-get-eligibility-setting</link>
+      <pubDate>09 Feb 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to create a group for an organizations.
+</title>
+      <link>https://api.hackerone.com/customer-resources#organizations-create-member-group</link>
+      <pubDate>07 Feb 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get a member in an organization.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#organizations-get-member</link>
+      <pubDate>06 Feb 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to update a group from an organizations.
+</title>
+      <link>https://api.hackerone.com/customer-resources#organizations-update-member-group</link>
+      <pubDate>06 Feb 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get a group in an organization.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#organizations-get-group</link>
+      <pubDate>03 Feb 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to list pending invitations in an organization.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#organizations-get-pending-invitations</link>
+      <pubDate>01 Feb 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to update a member for an organizations.
+</title>
+      <link>https://api.hackerone.com/customer-resources#organizations-update-member</link>
+      <pubDate>31 Jan 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to delete a member for an organizations.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#organizations-remove-a-member</link>
+      <pubDate>31 Jan 2023</pubDate>
+    </item>
+    <item>
+      <title>Added error 422 to error responses.
+</title>
+      <link>https://api.hackerone.com/getting-started/#error-responses</link>
+      <pubDate>25 Jan 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to create an invitation to an organizations.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#organizations-create-an-invitation</link>
+      <pubDate>25 Jan 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get all groups for organizations.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#organizations-get-all-groups</link>
+      <pubDate>25 Jan 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get all members for organizations.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#organizations-get-all-members</link>
+      <pubDate>24 Jan 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to add an asset to scope for assets.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#assets-add-asset-to-scope</link>
+      <pubDate>06 Jan 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to add an archive asset scopes for assets.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#assets-archive-asset-scopes</link>
+      <pubDate>06 Jan 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to update an asset for assets.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#assets-update-asset</link>
+      <pubDate>06 Jan 2023</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to archive assets for assets.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#assets-archive-assets</link>
+      <pubDate>06 Jan 2023</pubDate>
+    </item>
+    <item>
+      <title>Updated valid key parameter values for analytics.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#analytics</link>
+      <pubDate>12 Dec 2022</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get analytics data for analytics.
+</title>
+      <link>https://api.hackerone.com/customer-resources#analytics-get-analytics-data-preview</link>
+      <pubDate>09 Nov 2022</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get your organizations for organizations.
+</title>
+      <link>https://api.hackerone.com/customer-resources#organizations-get-your-organizations</link>
+      <pubDate>06 Sep 2022</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to create an asset for assets.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#assets-create-asset</link>
+      <pubDate>20 Jul 2022</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get all assets for assets.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#assets-get-all-assets</link>
+      <pubDate>20 Jul 2022</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get an asset for assets.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#assets-get-an-asset</link>
+      <pubDate>20 Jul 2022</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get all asset tags for assets.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#assets-get-all-asset-tags</link>
+      <pubDate>20 Jul 2022</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to retrieve an assets import for assets.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#assets-retrieve-an-assets-import</link>
+      <pubDate>20 Jul 2022</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to import assets with CSV file for assets.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#assets-import-assets-with-csv-file</link>
+      <pubDate>20 Jul 2022</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to upload attachments for state changes.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#reports-upload-attachments</link>
+      <pubDate>12 Oct 2021</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to upload attachments for comments.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#reports-upload-attachments</link>
+      <pubDate>30 Sep 2021</pubDate>
+    </item>
+    <item>
+      <title>Added automated and custom remediation guidance attributes to the report object.
+</title>
+      <link>https://api.hackerone.com/customer-reference#automated-remediation-guidance</link>
+      <pubDate>09 Nov 2020</pubDate>
+    </item>
+    <item>
+      <title>Added rate limits for read and write operations to ensure platform stability.
+</title>
+      <link>https://api.hackerone.com/getting-started/#rate-limits</link>
+      <pubDate>03 Nov 2020</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to request a retest for a report.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#reports-request-retest</link>
+      <pubDate>26 Oct 2020</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to get an activity by ID.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#activities-get-activity</link>
+      <pubDate>09 Oct 2020</pubDate>
+    </item>
+    <item>
+      <title>Added report attributes that track how long it took to respond, triage, reward, and resolve a report. Additionally, the report object now also contains when it expects any of those actions to happen.
+</title>
+      <link>https://api.hackerone.com/reference/#report</link>
+      <pubDate>17 Aug 2020</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to add report participants.
+</title>
+      <link>https://api.hackerone.com/customer-resources/#reports-add-participant</link>
+      <pubDate>07 Feb 2020</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to transfer reports between related programs
+</title>
+      <link>https://api.hackerone.com/customer-resources/#reports-transfer-report</link>
+      <pubDate>09 Jan 2020</pubDate>
+    </item>
+    <item>
+      <title>Added program management permission requirement to the
+get awarded swag endpoint.
+</title>
+      <link>https://api.hackerone.com/customer-resources#get-awarded-swag</link>
+      <pubDate>20 Nov 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to upload attachments to program policy.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>31 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Enabled filtering reports by hacker disclosure request. Added attribute to report for timestamp when the reporter agreed for disclosure.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>30 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added groups attribute to member object.
+</title>
+      <link>https://api.hackerone.com/customer-reference#member</link>
+      <pubDate>28 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for redacting reports.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>25 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for cancelling the report disclosure request.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>24 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added attribute for requesting report disclosure to show the disclosure timestamp.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>18 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for requesting report disclosure.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>15 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for showing program policy and its attachments.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>11 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for fetching bounty suggestions.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>10 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to fetch all program swag.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>10 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for filtering reports by keywords.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>09 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Enabled filtering reports by severities.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>09 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for updating report structured scope.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>08 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for getting program's balance.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>07 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for fetching program payment transactions.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>07 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for fetching program thanks items.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>07 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Enabled filtering reports by weaknesses.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>03 Oct 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for marking swag as sent.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>26 Sep 2019</pubDate>
+    </item>
+    <item>
+      <title>Made title, vulnerability information, impact, and source parameters required for the report create endpoint.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>25 Sep 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to mark a report as ineligible for bounty.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>05 Sep 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for updating program policy.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>29 Aug 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for updating report weakness.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>23 Aug 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to create reports.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>22 Aug 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for fetching program weaknesses.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>21 Aug 2019</pubDate>
+    </item>
+    <item>
+      <title>Added a severity parameter to create a program bounty, it will set the severity for the created report.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>26 Jun 2019</pubDate>
+    </item>
+    <item>
+      <title>Made the recipient parameter optional to create a program bounty and added the claim link to the response.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>25 Jun 2019</pubDate>
+    </item>
+    <item>
+      <title>Added filter attribute to include/exclude hacker published reports.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>23 May 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint to read Audit Log for a Program.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>15 May 2019</pubDate>
+    </item>
+    <item>
+      <title>Expose Custom Field Attributes on a Program and added endpoint
+for updating Custom Field Values on a Report.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>24 Apr 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for creating/updating severities on reports.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>19 Feb 2019</pubDate>
+    </item>
+    <item>
+      <title>Enabled filtering reports by assignee emails.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>04 Feb 2019</pubDate>
+    </item>
+    <item>
+      <title>Added endpoints for fetching, creating, updating, and archiving structured scopes.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>04 Dec 2018</pubDate>
+    </item>
+    <item>
+      <title>Added activities endpoint.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>26 Nov 2018</pubDate>
+    </item>
+    <item>
+      <title>Enabled filtering reports by assignees.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>08 Nov 2018</pubDate>
+    </item>
+    <item>
+      <title>Added attribute to report to show CVE IDs.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>20 Aug 2018</pubDate>
+    </item>
+    <item>
+      <title>Added endpoint for fetching specific data of a user.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>06 Jul 2018</pubDate>
+    </item>
+    <item>
+      <title>added endpoint for fetching common responses of a program.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>29 Aug 2017</pubDate>
+    </item>
+    <item>
+      <title>added endpoints for awarding bounties, suggesting bounties, and for awarding swag.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>28 Aug 2017</pubDate>
+    </item>
+    <item>
+      <title>added lastpublicactivity_at in favor of
+lastactivityat. The new attribute can be used in filtering
+and exposes the date of the last public activity. The lastactivityat
+attribute will now return the date of the last activity, both public and
+internal.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>10 May 2017</pubDate>
+    </item>
+    <item>
+      <title>added endpoint to disable commenting / locking a report.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>29 Mar 2017</pubDate>
+    </item>
+    <item>
+      <title>added the reports resource that enables the user to update
+the title of reports that are received by teams the API user is part of.
+</title>
+      <link>https://api.hackerone.com/customer-resources#reports-update-title</link>
+      <pubDate>28 Mar 2017</pubDate>
+    </item>
+    <item>
+      <title>added the me resource that enables the user to query
+the programs the API user is part of.
+</title>
+      <link>https://api.hackerone.com/customer-resources#programs-get-your-programs</link>
+      <pubDate>20 Feb 2017</pubDate>
+    </item>
+    <item>
+      <title>added ability to filter reports based on
+user usernames. Added endpoint to retrieve a list of users
+that participated in a program.
+</title>
+      <link>https://api.hackerone.com/customer-resources#reports-query-reports</link>
+      <pubDate>26 Jan 2017</pubDate>
+    </item>
+    <item>
+      <title>added ability to set a page size when querying reports.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>23 Nov 2016</pubDate>
+    </item>
+    <item>
+      <title>added ability to change the state of a report
+object and added ability to post internal and public comments.
+</title>
+      <link>https://api.hackerone.com/customer-reference#report</link>
+      <pubDate>02 Nov 2016</pubDate>
+    </item>
+    <item>
+      <title>added severity relationship to
+report object.
+</title>
+      <link>https://api.hackerone.com/customer-reference#severity</link>
+      <pubDate>05 Oct 2016</pubDate>
+    </item>
+    <item>
+      <title>added endpoint to query more information about a program.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>23 Sep 2016</pubDate>
+    </item>
+    <item>
+      <title>added ability to assign users and groups to a report.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>21 Sep 2016</pubDate>
+    </item>
+    <item>
+      <title>added reputation, signal, and impact metrics of a report's
+reporter.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>24 Aug 2016</pubDate>
+    </item>
+    <item>
+      <title>removed inlining if a report in the bug cloned activity to
+avoid a denial of service vulnerability when the original report references the
+cloned report.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>19 Jul 2016</pubDate>
+    </item>
+    <item>
+      <title>fixed a bug where the time in a date filter was erroneously
+truncated.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>19 Jul 2016</pubDate>
+    </item>
+    <item>
+      <title>added activity objects for hacker mediation requests and
+vulnerability types updates.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>18 Jul 2016</pubDate>
+    </item>
+    <item>
+      <title>the endpoint for querying reports now returns
+descriptive errors in case an invalid filter value is given.
+</title>
+      <link>https://api.hackerone.com/customer-resources#reports-get-all-reports</link>
+      <pubDate>01 Jun 2016</pubDate>
+    </item>
+    <item>
+      <title>added lastactivityat attribute to the report
+object and as a filter for querying reports.
+</title>
+      <link>https://api.hackerone.com/customer-reference#report</link>
+      <pubDate>23 May 2016</pubDate>
+    </item>
+    <item>
+      <title>removed inlined duplicate report object from
+activities relationship when a single report is fetched.
+</title>
+      <link>https://api.hackerone.com/customer-reference#report</link>
+      <pubDate>23 May 2016</pubDate>
+    </item>
+    <item>
+      <title>introduced endpoint to query multiple reports.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>06 May 2016</pubDate>
+    </item>
+    <item>
+      <title>introduced endpoint to query a single report.
+</title>
+      <link>https://api.hackerone.com/customer-resources</link>
+      <pubDate>14 Apr 2016</pubDate>
+    </item>
+  </channel>
+</rss>
